@@ -15,7 +15,6 @@
                 if (this.readyState == 4) {
                     if (this.status == 200) {
                         if (this.responseXML != null) {
-                            // XML file received - contains analog values, switch values and LED states
                             var count;
                             // LED 1
                             if (this.responseXML.getElementsByTagName('LED')[0].childNodes[0].nodeValue === "checked") {
